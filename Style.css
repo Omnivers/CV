@@ -9,7 +9,6 @@
 body{
     font-family: Ro;
     display: grid;
-    height: auto;
     grid-template-columns:  70% 30%;
     grid-template-rows: 15% 85%;
     grid-template-areas: 
@@ -40,8 +39,6 @@ h4 {
 }
 h6{
     padding-left: 250px;
-    bottom:25px;
-    position: relative;
     font-size: 14px;
     color: rgba(0, 0, 0, 0.5);
 }
@@ -77,9 +74,7 @@ header{
     grid-area: Parcours;
 }
 .missions{
-    position: relative;
-    bottom: 25px;
-    left:130px;
+    padding-left: 25vh;
     inline-size: 80%;
     font-size: 20px;
     color: rgba(0, 0, 0, 0.8);
@@ -95,6 +90,37 @@ aside h4{
 }
 aside ul{
     color: rgba(0, 0, 0, 0.8);
+}
+@media screen and (max-width: 768px) {
+    body{
+        font-family: Ro;
+        display: grid;
+        grid-template-columns:  100%;
+        grid-template-rows: 0.5fr 0.05fr 0.05fr 0.05fr 0.5fr;
+        grid-template-areas: 
+            "hd hd"
+            "AboutMe AboutMe"
+            "Formation Formation"
+            "Parcours Parcours"
+            "aside aside"
+        ;
+    }
+    .AboutMe{
+        font-size: 30px;
+        font-family: Ro_light;
+        inline-size: 100%;
+    }
+    h6{
+        padding-left: 50px;
+    }
+    .missions{
+        padding-left: 5vh;
+        inline-size: 100%;
+    }
+    main{
+        padding-left: 30px;
+        
+    }
 }
 
 
