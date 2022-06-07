@@ -1,10 +1,15 @@
+@font-face {
+    font-family: Ro;
+    src: url(Roboto-Black.ttf);
+}
 body{
+    font-family: Ro;
     margin-top: 0;
     margin-right: 50px;
     display: grid;
     height: auto;
-    grid-template-columns:  1fr 1fr;
-    grid-template-rows: 0.1fr 1fr;
+    grid-template-columns:  80% 20%;
+    grid-template-rows: 15% 85%;
     grid-template-areas: 
         "hd hd"
         "AboutMe aside"
@@ -12,33 +17,54 @@ body{
         "Parcours aside"
     ;
 }
+main{
+    padding: 30px;
+}
 h1:not(#Nom){
     color:rgb(86, 108, 122);
+    border-bottom: 2px solid rgb(213, 215, 215);
 }
 header{
     grid-area: hd;
     background-color: rgb(86, 108, 122);
     color: white;
     padding-left: 30px;
-    
 }
 .AboutMe{
     grid-area: AboutMe;
-    padding: 20px;
     line-height: 1.5;
+    padding-bottom: 50px;
+    font-size: 20px;
+    inline-size: 90%;
 }
 aside{
+    padding-top: 10px;
+    
     grid-area: aside;
 }
 .Formation{
     grid-area: Formation;
-    padding-left: 30px;
+    padding-bottom: 50px;
+    
 }
 .Date{
     float: left;
     padding-right: 30px;
-    
 }
 .Parcours{
     grid-area: Parcours;
+}
+h6{
+    padding-left: 130px;
+    bottom:25px;
+    position: relative;
+}
+.missions{
+    position: relative;
+    bottom: 25px;
+    left:55px;
+    inline-size: 80%;
+}
+ul{
+    line-height: 2.5;
 }
