@@ -1,0 +1,44 @@
+body{
+    margin-top: 0;
+    margin-right: 50px;
+    display: grid;
+    height: auto;
+    grid-template-columns:  1fr 1fr;
+    grid-template-rows: 0.1fr 1fr;
+    grid-template-areas: 
+        "hd hd"
+        "AboutMe aside"
+        "Formation aside"
+        "Parcours aside"
+    ;
+}
+h1:not(#Nom){
+    color:rgb(86, 108, 122);
+}
+header{
+    grid-area: hd;
+    background-color: rgb(86, 108, 122);
+    color: white;
+    padding-left: 30px;
+    
+}
+.AboutMe{
+    grid-area: AboutMe;
+    padding: 20px;
+    line-height: 1.5;
+}
+aside{
+    grid-area: aside;
+}
+.Formation{
+    grid-area: Formation;
+    padding-left: 30px;
+}
+.Date{
+    float: left;
+    padding-right: 30px;
+    
+}
+.Parcours{
+    grid-area: Parcours;
+}

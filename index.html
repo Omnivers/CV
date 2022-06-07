@@ -4,42 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
     <title>CV</title>
 </head>
 <body>
 
     <header>
-        <h1>Jad Aroussi</h1><!--Prénom & Nom-->
+        <h1 id="Nom">Jad Aroussi</h1><!--Prénom & Nom-->
         <h4>Développeur Web en alternance</h4><!--Titre de profession-->
     </header>
 
     <main>
-        <section class="About_me">
+        <section class="AboutMe">
             <p>
             Esprit d'équipe fiable et travailleur, j'aimerais utiliser mes compétences en programmation pour soutenir la stabilité et la croissance de votre équipe. En formation boot camp full stack à Konexio, disponible pour une alternance 3 semaines en entreprise 1 semaine en école à partir du 15 Septembre.
             </p>
         </section>
+        <h1>Formation</h1>
         <section class="Formation">
-            <h1>Formation</h1>
-                <p>
+            
+                <article>
                     <span class="Date">2022-05<br>Actuel</span>
                     <h3>Professionnel RNCP V (Bac + 2):Développeur Web</h3>
                     <h6>Konexio-Paris</h6>
-                </p>
-                <p>
+                </article>
+                <article>
                     <span class="Date">2018-09<br>2022-02</span>
                     <h3>Bac+4 : Architecture</h3>
                     <h6>PAEGCA - Dnepropetrovsk</h6>
-                </p>
-                <p>
+                </article>
+                <article>
                     <span class="Date">2016-09<br>2017-06</span>
                     <h3>Ingénieur d'informatique</h3>
                     <h6>Supinfo - Rabat</h6>
-                </p>
+                </article>
         </section>
-        <section class="Parcours_Professionnel">
-            <h1>Parcours professionnel</h1>
-                <p>
+        <h1>Parcours professionnel</h1>
+        <section class="Parcours">
+            
+                <article>
                     <span class="Date">2022-03<br>2022-04</span>
                     <h3>Bénévole</h3>
                     <h4>
@@ -49,8 +52,8 @@
                             <li>Répondre aux demandes des réfugiés de façon efficace et éclairée</li>
                         </ul>
                     </h4>
-                </p>
-                <p>
+                </article>
+                <article>
                     <span class="Date">2021-05<br>2021-09</span>
                     <h3>Teleprospecteur</h3>
                     <h6>I.I Dnepr</h6>
@@ -60,30 +63,31 @@
                             <li>Travailler pour atteindre des taux de satisfaction élevés en étant à l'écoute et en s'adaptant à chaque client tenant compte de sa demande et de son Feedback</li>
                         </ul>
                     </h4>
-                </p>
+                </article>
         </section>
-        <aside class="aside">
+    </main>
+    <aside>
             <picture>
                 <img src="portrait.png" alt="Moi" width=20% height=20%>
             </picture>
-            <div class="Cordonnées">
+            <section class="Cordonnées">
                 <h1>Cordonnées</h1>
                     <address>
                         <h4>Adresse</h4>33 BIS RUE DE FRANCE 77300<br>FONTAINEBLEAU
                     </address>
                     <phone>
-                        <h4>Téléphone</h4>0774668043
+                        <h4>Téléphone</h4><a href="+33774668043">0774668043</a>
                     </phone>
                 <mail>
                     <h4>Mail</h4>
-                    <a href= mailto:Twersimor.stock@outlook.com?subject='Alternance'>Twersimor.stock@outlook.com</a>
+                    <a href= "mailto:Twersimor.stock@outlook.com?subject='Alternance'">Twersimor.stock@outlook.com</a>
                 </mail>
                 <address>
                     <h4>Portfolio</h4>
                     <a href="https://Omnivers.github.io" target="_blank">Omnivers.github.io</a><!--Site Web-->
                 </address>
-            </div>
-            <div class="Langues">
+            </section>
+            <section class="Langues">
                 <h1>Langues</h1>
                     <ul>
                         <li>Anglais</li>
@@ -92,8 +96,8 @@
                         <li>Russe</li>
                         <li>Ukrainien</li>
                     </ul>
-            </div>
-            <div class="Compétences">
+                </section>
+            <section class="Compétences">
                 <h1>Compétences</h1>
                     <ul>
                         <li>ExpressJS</li>
@@ -104,8 +108,8 @@
                         <li>NoSQL</li>
                         <li>React</li>
                     </ul>
-            </div>
-        </aside>
-    </main>
+            </section>
+    </aside>
+    
 </body>
 </html>
