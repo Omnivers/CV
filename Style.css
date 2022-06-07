@@ -8,8 +8,6 @@
 }
 body{
     font-family: Ro;
-    margin-top: 0;
-    margin-right: 50px;
     display: grid;
     height: auto;
     grid-template-columns:  70% 30%;
@@ -24,7 +22,6 @@ body{
 main{
     padding: 30px;
 }
-
 #Nom{
     font-size: 50px;
     font-weight: bolder;
@@ -92,6 +89,14 @@ aside{
     background-color: rgb(213, 215, 215);
     grid-area: aside;
 }
+aside h4{
+    font-size: 20px;
+    font-weight: bolder;
+}
+aside ul{
+    color: rgba(0, 0, 0, 0.8);
+}
+
 
 
 
